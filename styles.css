@@ -2,8 +2,11 @@
     width: 350px;
     height: 400px;
     border: solid;
-    border-color: red;
-    background-color: lightgray;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: black;
+    background-color: #bababa;
+    margin: auto;
 }
 
 div.title {
@@ -28,5 +31,11 @@ margin: auto;
 }
 
 #numField1, #numField2{ 
-    width: 10px;
+    width: 20px;
 }
+
+::placeholder {
+    color: gray;
+    text-align: center;
+}
+

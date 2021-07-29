@@ -34,7 +34,7 @@ function myCalFunct(event) {
         var mid = (y/x) * 1.0
         var ans = 100.0/mid
         //alert("Your answer is " + ans + "%")
-        printRes.innerText = ("Result " + ans + "%")
+        printRes.innerText += (" " + ans + "%")
 
         
     }
