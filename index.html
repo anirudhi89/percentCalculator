@@ -8,17 +8,22 @@
     <link rel = 'stylesheet' href = 'styles.css'>
 </head>
 <body>
-    <h1>Percentages Calculator</h1>
-    <p>X is what percent of y</p>
-    <form onsubmit = 'return false' id = 'xisWhatPercentofY'> 
-        <!-- onsubmit ='return false'  -->
-        <input type = "text" id = "numField1"> is what percent of <input type = "text" id = "numField2">?
+    <div class="pcalc">
+        <div class = 'title'><h1>Percentages Calculator</h1></div>
         <br><br>
-        <input type = "submit" value="Calculate">
-    </form>
-    <h3 id = "result">Result:</h3>
-    <script type = "text/javascript" src = "calc.js"></script>
-    
+        <select name='opt' id = 'optSel'>
+            <option value = 'none' selected disabled hidden>Select an Option</option>
+            <option>X is what percent of Y</option>
+        </select>  
+        <form id = 'xisWhatPercentofY'> 
+            <!-- onsubmit ='return false'  -->
+            <input type = "text" id = "numField1" placeholder="X"> is what percent of <input type = "text" id = "numField2" placeholder="Y">?
+            <br><br>
+            <input type = "submit" value="Calculate">
+        </form>
+        <h3 id = "result">Result:</h3>
+        <script type = "text/javascript" src = "calc.js"></script>
+    </div>
 
 
 </body>
