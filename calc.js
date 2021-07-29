@@ -11,9 +11,9 @@ function isNumeric(n) {
 }
 
 
-function myCalFunct() {
+function myCalFunct(event) {
 
-    printRes.innerText = "";
+   // printRes.innerText = "";
 
 
     if (!numField1.value || !numField2.value) {
@@ -35,8 +35,10 @@ function myCalFunct() {
         var ans = 100.0/mid
         //alert("Your answer is " + ans + "%")
         printRes.innerText = ("Result " + ans + "%")
+
+        
     }
-    
+    event.preventDefault()
     
 }
 
